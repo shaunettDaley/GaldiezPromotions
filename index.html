@@ -9,14 +9,245 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <title>Photo Ninja</title>
+  <title>Galdies Promotions</title>
+  <style>
+    /*header{
+      background:url('img/back1.jpg');
+      background-size:cover;
+      background-position:center;
+      min-height:1000px;
+      
+    }*/
+
+    nav ul a {
+    color: #000;
+    font-weight: bold;
+}
+    .header-slideshow{
+      min-height:500px;
+      min-width:100%;
+      max-width:100%;
+      overflow:hidden;
+    }
+
+    .carousel{
+      min-height:600px;
+
+    }
+
+    .header-image{
+     width:100% !important;
+      min-width:100%;
+      overflow:hidden;
+      background:url('img/logo2.png');
+      background-repeat:no-repeat;
+      background-size:100% 100%;
+      height:900px;
+      background-position:center;
+  
+    }
+
+    .header-image img{
+      width:100% !important;
+      max-width:100%;
+      min-width:100%;
+      overflow:hidden;
+    }
+
+
+    span.top-logo {
+    z-index: 999999999;
+    position: absolute;
+    top: 1px;
+    /* transform: translate(50%, 50%); */
+    left: 10%;
+    width:200px;
+    height:200px;
+    text-align:center;
+    /* display: none; */
+}
+
+section{
+  padding-top:4vw;
+  padding-bottom:4vw;
+}
+
+.btn-floating {
+  background:#ffffff !important;
+}
+.nav-wrapper{
+  background-color:#f16702 !important;
+}
+
+span.top-logo img {
+  width: 60%;
+    position: relative;
+    top: 18%;
+}
+
+
+@media screen and (max-width:1366px){
+      
+      .header-image{
+        height:596px !important;
+      }
+    }
+
+@media screen and (max-width:1024px){
+      
+      .header-image{
+        height:500px !important;
+      }
+    }
+
+    @media screen and (max-width:670px){
+      /*header{
+        min-height:500px;
+      }*/
+
+      .header-image{
+        height:50% !important;
+      }
+
+      nav .brand-logo {
+    font-size: 1.5rem;
+        }
+
+        h2 {
+    font-size: 2.56rem;
+}
+    }
+    </style>
 </head>
 <body>
 
   <!-- navbar -->
+    <header class="">
+<nav class="nav-wrapper">
+  <div class="container">
+    <a href="#" class="brand-logo hide-on-large-only"> Galidez Promotions</a>
+    <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons">menu</i></a>
+    <ul class="hide-on-med-and-down right">
+      <li><a href="#">Event Info</a></li>
+      <li><a href="#">Buy Ticket</a></li>
+      <li><a href="#">Connect</a></li>
+    </ul>
 
-  <!-- photo / grid -->
+    <ul class="sidenav grey lighten-2" id="mobile-menu">
+      <li><a href="#">Event Info</a></li>
+      <li><a href="#">Buy Ticket</a></li>
+      <li><a href="#">Connect</a></li>
+    </ul>
+  </div>
+</nav>
 
+<span class="top-logo hide-on-small-only btn-floating pulse"><img src="img/logo.jpg" class="responsive-img"/></span>
+
+<div class="container header-image">
+  <!--<img src="img/logo2.png" class="responsive-img"/>-->
+</div>
+<!--
+<div class="carousel carousel-slider">
+  <a class="carousel-item"><img src="img/logo2.png" /></a>
+  <a class="carousel-item"><img src="img/logo.jpg" /></a>
+</div>
+-->
+
+    </header>
+  <!-- eventinfo -->
+<section class="container section" id="eventInfo">
+  <h2 style="text-align:center;"> Event Info</h2>
+  <div class="row">
+    <div class="col s12 l4">
+      <img src="img/flyer1.jpg" class="responsive-img hoverable materialboxed"/>
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h2 class="indigo-text text-darken-4"> Galiday Bounce 2020 , Jamaica</h2>
+      <p> December 30th, 2020<br/>
+      Priory Beach<br/>
+    Priory, St Ann, Jamaica</p>
+    <p><a class="waves-effect waves-light btn pulse"><i class="material-icons left">add_shopping_cart</i>Buy Ticket</a>
+    </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 l4 push-l7">
+      <img src="img/flyer1.jpg" class="responsive-img hoverable materialboxed"/>
+    </div>
+    <div class="col s12 l6 offset-l1 pull-l5 right-align" >
+      <h2 class="indigo-text text-darken-4"> Galiday Bounce 2020 , Atlanta</h2>
+      <p> August 1, 2020<br/>
+      <strong>Born Losser</strong><br/>
+    Lithonia, Atlanta, Georgia</p>
+    <p><a class="waves-effect waves-light btn pulse"><i class="material-icons left">add_shopping_cart</i>Buy Ticket</a>
+    </p>
+    </div>
+  </div>
+
+</section>
+
+<!--ticket vendor info-->
+<section class="container section" id="eventInfo">
+  <div class="row">
+    <div class="col s12">
+      <hr>
+      <h2 style="text-align:center;"> Ticket Vendors</h2>
+      <p> Purchase your ticket from any of the following ticket vendors below!</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet 
+        quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div>
+    
+  </div>
+
+  
+
+</section>
+
+
+<!--ticket vendor info-->
+<section class="container section" id="eventInfo">
+  <div class="row">
+    <div class="col s12">
+      <hr>
+      <h2 style="text-align:center;"> Sponsors Info Goes Here</h2>
+      <p> Purchase your ticket from any of the following ticket vendors below!</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet 
+        quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+          feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet 
+          quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div>
+    
+  </div>
+
+  
+
+</section>
+
+
+<!--ticket vendor info-->
+<section class="container section" id="eventInfo">
+  <div class="row">
+    <div class="col s12">
+      <hr>
+      <h2 style="text-align:center;"> Stay Connected  Info Here</h2>
+      <p> Purchase your ticket from any of the following ticket vendors below!</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet 
+        quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
+          feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet 
+          quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div>
+    
+  </div>
+
+  
+
+</section>
   <!-- parallax -->
 
   <!-- services / tabs -->
@@ -31,8 +262,20 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
-    $(document).ready(function(){
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+   let elems = document.querySelectorAll('.carousel');
+   let instances = M.Carousel.init(elems,{
+     fullwidth: true,
+     indicator:true,
+     dist: -50
+   });
+});
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
     });
   </script>
 </body>
