@@ -7,130 +7,16 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/260dc706be.js" crossorigin="anonymous"></script>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link rel="stylesheet" href="styles/style.css">
   <title>Galdies Promotions</title>
   <style>
-    /*header{
-      background:url('img/back1.jpg');
-      background-size:cover;
-      background-position:center;
-      min-height:1000px;
-      
-    }*/
     
-    h2{
-      font-size:2.56rem !important;
-    }
-.parallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 300px !important;
-}
-    nav ul a {
-    color: #000;
-    font-weight: bold;
-}
-    .header-slideshow{
-      min-height:500px;
-      min-width:100%;
-      max-width:100%;
-      overflow:hidden;
-    }
-
-    .carousel{
-      min-height:600px;
-
-    }
-
-    .header-image{
-     width:100% !important;
-      min-width:100%;
-      overflow:hidden;
-      background:url('img/logo.jpg');
-      background-repeat:no-repeat;
-      background-size:contain;
-      height:680px; /*900px;*/
-      background-position:center;
-      position:relative;
-      top:1px;
-      box-shadow:5px 5px 5px #ccc;
-    }
-
-    .header-image img{
-      width:100% !important;
-      max-width:100%;
-      min-width:100%;
-      overflow:hidden;
-    }
-
-
-    span.top-logo {
-    z-index: 999999999;
-    position: absolute;
-    top: 1px;
-    /* transform: translate(50%, 50%); */
-    left: 10%;
-    width:200px;
-    height:200px;
-    text-align:center;
-    /* display: none; */
-}
-
-section{
-  padding-top:4vw;
-  padding-bottom:4vw;
-}
-
-.btn-floating {
-  background:#ffffff !important;
-}
-.nav-wrapper{
-  background-color:#f16702 !important;
-}
-
-span.top-logo img {
-  width: 60%;
-    position: relative;
-    top: 18%;
-}
-
-
-@media screen and (max-width:1366px){
-      
-      .header-image{
-        height:596px !important;
-      }
-    }
-
-@media screen and (max-width:1024px){
-      
-      .header-image{
-        height:500px !important;
-      }
-    }
-
-    @media screen and (max-width:670px){
-      /*header{
-        min-height:500px;
-      }*/
-
-      .header-image{
-        height:50% !important;
-      }
-
-      nav .brand-logo {
-    font-size: 1.5rem;
-        }
-
-        h2 {
-    font-size: 2.40rem !important;
-}
-      
-      .parallax-container {
-    height: 150px !important;
-}
-    }
     </style>
 </head>
 <body>
@@ -143,21 +29,40 @@ span.top-logo img {
     <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons">menu</i></a>
     <ul class="hide-on-med-and-down right">
       <li><a href="#">Event Info</a></li>
-      <li><a href="#">Buy Ticket</a></li>
+      <li class="btn-floating pulse"><a href="#">Buy Ticket</a></li>
       <li><a href="#">Connect</a></li>
     </ul>
 
     <ul class="sidenav grey lighten-2" id="mobile-menu">
-      <li><a href="#">Event Info</a></li>
+      <li><a href="eventInfo">Event Info</a></li>
       <li><a href="#">Buy Ticket</a></li>
-      <li><a href="#">Connect</a></li>
+      <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
     </ul>
   </div>
 </nav>
 
 <!--<span class="top-logo hide-on-small-only btn-floating pulse"><img src="img/logo.jpg" class="responsive-img"/></span>-->
-
+<span class="slogan">The Ultimate Dancehall Hardcore  Reggae Show</span>
 <div class="container header-image">
+
+  <!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+      <!-- Slides -->      
+     <!-- <div class="swiper-slide"><img src="img/logo.jpg" class="responsive-img"/></div> -->
+      <div class="swiper-slide"><img src="img/Galiday_Bounce_2020_ATLtitle.png" class="responsive-img"/></div>
+      <div class="swiper-slide"><img src="img/Galiday_Bounce_2020_ATL.png" class="responsive-img"/></div>
+
+  </div>
+ 
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
   <!--<img src="img/logo2.png" class="responsive-img"/>-->
 </div>
 <!--
@@ -173,13 +78,14 @@ span.top-logo img {
   <h2 style="text-align:center;"> Event Info</h2>
   <div class="row">
     <div class="col s12 l4">
-      <img src="img/flyer1.jpg" class="responsive-img hoverable materialboxed"/>
+      <img src="img/Galiday_Bounce_2020_ATL.jpg" class="responsive-img hoverable materialboxed"/>
     </div>
     <div class="col s12 l6 offset-l1">
-      <h2 class="indigo-text text-darken-4"> Galiday Bounce 2020 , Jamaica</h2>
-      <p> December 30th, 2020<br/>
-      Priory Beach<br/>
-    Priory, St Ann, Jamaica</p>
+      <h2 class="indigo-text text-darken-4"> Galiday Bounce 2020, Atlanta</h2>
+      <p> August 1, 2020<br/>
+        <strong>Born Losser</strong><br/>
+    Lithonia, Atlanta, Georgia</p>
+     
     <p><a class="waves-effect waves-light btn pulse"><i class="material-icons left">add_shopping_cart</i>Buy Ticket</a>
     </p>
     </div>
@@ -190,10 +96,10 @@ span.top-logo img {
       <img src="img/flyer1.jpg" class="responsive-img hoverable materialboxed"/>
     </div>
     <div class="col s12 l6 offset-l1 pull-l5 right-align" >
-      <h2 class="indigo-text text-darken-4"> Galiday Bounce 2020 , Atlanta</h2>
-      <p> August 1, 2020<br/>
-      <strong>Born Losser</strong><br/>
-    Lithonia, Atlanta, Georgia</p>
+      <h2 class="indigo-text text-darken-4"> Galiday Bounce 2020, Jamaica</h2>
+      <p> December 30th, 2020<br/>
+        Priory Beach<br/>
+        Priory, St Ann, Jamaica</p>
     <p><a class="waves-effect waves-light btn pulse"><i class="material-icons left">add_shopping_cart</i>Buy Ticket</a>
     </p>
     </div>
@@ -263,14 +169,24 @@ span.top-logo img {
   <div class="row">
     <div class="col s12">
      
-      <h2 style="text-align:center;"> Stay Connected  Info Here</h2>
-      <p> Purchase your ticket from any of the following ticket vendors below!</p>
+      <h2 style="text-align:center;"> Stay Connected!!</h2>
+      <p> Stay connected with us and start following and share  to keep up-to-date with the latest updates regarding the  concert.</p>
+      <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                     <div class="col s12 l4"> <a href="#" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i><br/><span class="socialInfo">YouTube - GalidayBounceConcert</span></a></div>
+            <div class="col s12 l4"><a href="#" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i><br/><span class="socialInfo">Facebook - Galdiez Promotions</span></a></div>
+           <div class="col s12 l4"> <a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i><br/><span class="socialInfo">Instagram - @galidaybounceconcert</span></a></div>
+            </div>
+        </div>
+    </div>
+     <!-- <p> Purchase your ticket from any of the following ticket vendors below!</p>
       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
         feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet 
         quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
           feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet 
-          quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>-->
     </div>
     
   </div>
@@ -298,18 +214,20 @@ span.top-logo img {
         </div>
 
         <div class="col s12 l4 offset-l2">
-          <h5>Join Mailing List</h5>
+          <h5>The Ultimate Hardcore Reggae Dancehall!</h5>
         </div>
       </div>
     </div>
 
     <div class="footer-copyright grey darken-4">
-      <div class="container center-align">&copy; 2020 Galiday Bounce Promotions <br/> Designed By: Shaunett - <a href="innovationsdesigntechnology.com" target="_blank">www.innovationsdesigntechnology.com</a></div>
+      <div class="container center-align">&copy; 2020 Galiday Bounce Promotions <br/> Designed By:<a href="innovationsdesigntechnology.com" target="_blank">www.innovationsdesigntechnology.com </a> - <a href="tel:7542446294">(754)244-6294)</a></a></div>
       
     </div>
   </footer>
 
   <!-- Compiled and minified JavaScript -->
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
@@ -328,6 +246,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
       $('.parallax').parallax();
       $('.materialboxed').materialbox();
     });
+  </script>
+
+
+<!--swriper-->
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 400,
+  
+    autoplay: {
+    delay: 5000,
+  },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
   </script>
 </body>
 </html>
