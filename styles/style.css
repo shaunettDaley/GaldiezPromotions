@@ -26,10 +26,11 @@
         font-size: 46px;
         text-shadow: 4px 4px 4px #f16702;
         width: 100%;
-        top: 95px;
+        top: 78px; /*95px;*/
         letter-spacing: 2px;
         text-align: center;
         font-family: 'Teko', sans-serif;
+        z-index:99999;
     }
 
     .swiper-container {
@@ -188,7 +189,7 @@
         height: 150px !important;
     }
     span.slogan{
-        font-size:26px;
+        font-size:18px;
         top:72px;
     }
     
@@ -197,7 +198,7 @@
 
         @media screen and (max-width:415px){
           .header-image {
-              height: 60% !important;
+              height: 64% !important;
           }
 
           nav .brand-logo {
@@ -208,7 +209,7 @@
 
         @media screen and (max-width:376px){
             .header-image {
-                height: 68% !important;
+                height: 54% !important;
             }
 
             nav .brand-logo {
@@ -216,3 +217,15 @@
             }
 
         }
+
+
+        @media screen and (max-width:360px){
+          .header-image {
+              height: 68% !important;
+          }
+
+          nav .brand-logo {
+              font-size: 17px;
+          }
+
+      }
