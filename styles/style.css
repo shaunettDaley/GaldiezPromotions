@@ -5,6 +5,15 @@
       min-height:1000px;
       
     }*/
+
+    .video-container iframe {
+      padding-bottom: 17px;
+  }
+
+  a.waves-effect.waves-light.btn.pulse.event {
+    background-color: #f16702;
+}
+
     .fab{
         font-size:50px;
         color:#f16702;
@@ -153,7 +162,7 @@
                 padding: 9px;
             }
           .pulse::before{
-            width:95% !important;
+            width:84% !important;
           }
           /*header{
             min-height:500px;
@@ -184,6 +193,18 @@
     }
     
         }
+
+
+        @media screen and (max-width:415px){
+          .header-image {
+              height: 60% !important;
+          }
+
+          nav .brand-logo {
+              font-size: 17px;
+          }
+
+      }
 
         @media screen and (max-width:376px){
             .header-image {
