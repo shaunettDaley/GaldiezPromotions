@@ -5,6 +5,26 @@
       min-height:1000px;
       
     }*/
+    a.waves-effect.waves-light.btn.tele {
+      background: #000;
+      box-shadow: 6px 6px 6px teal;
+  }
+
+  a.waves-effect.waves-light.btn.stall {
+    background: #666;
+    box-shadow: 6px 6px 6px teal;
+}
+
+    .card .card-action{
+      font-size:23px;
+      font-weight:bold;
+    }
+
+    .card-title{
+      font-weight:bold;
+      color:#ffd8a6;
+      text-shadow:2px 2px 2px #000;
+    }
 
     .video-container iframe {
       padding-bottom: 17px;
@@ -12,6 +32,11 @@
 
   a.waves-effect.waves-light.btn.pulse.event {
     background-color: #f16702;
+    box-shadow: 4px 4px 4px #000;
+}
+
+a.waves-effect.waves-light.btn.pulse.addshadow {
+  box-shadow: 3px 3px 3px #000;
 }
 
     .fab{
@@ -158,6 +183,10 @@
         }
     
         @media screen and (max-width:670px){
+          a.waves-effect.waves-light.btn.tele {
+         
+            margin-top: 18px;
+        }
             .fab{
                 font-size:30px;
                 padding: 9px;
