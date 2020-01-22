@@ -162,6 +162,10 @@ a.waves-effect.waves-light.btn.pulse.addshadow {
         top: 18%;
     }
     
+
+    ul#mobile-menu {
+      z-index: 9999999;
+  }
     
     @media screen and (max-width:1366px){
           
